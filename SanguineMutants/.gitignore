@@ -1,0 +1,10 @@
+build
+dep
+dist
+/plugin.dll
+/.settings
+/.cproject
+/.project
+*.so
+/.vscode
+/SanguineMutants.code-workspace
