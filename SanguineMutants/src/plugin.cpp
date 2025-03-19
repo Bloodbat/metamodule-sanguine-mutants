@@ -1,8 +1,16 @@
 #include "plugin.hpp"
 
-Plugin* pluginInstance;
+#if defined(METAMODULE_BUILTIN)
+extern Plugin *pluginInstance;
+#else
+Plugin *pluginInstance;
+#endif
 
+#if defined(METAMODULE_BUILTIN)
+void init_SanguineMutants(rack::Plugin* p) {
+#else 
 void init(rack::Plugin* p) {
+#endif
 	pluginInstance = p;
 
 	p->addModel(modelFunes);

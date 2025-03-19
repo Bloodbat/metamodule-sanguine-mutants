@@ -907,10 +907,16 @@ void SanguineModuleWidget::makePanel() {
 	faceplateFileName += faceplateThemeStrings[faceplateTheme] + ".svg";
 
 	SanguinePanel* panel = new SanguinePanel(backplateFileName, faceplateFileName);
-	if (bHasCommon) {
-		panel->addLayer("res/" + moduleName + "_common.svg");
-	}
 	setPanel(panel);
+
+	// NOTE: Faceplates aren't rendering properly, but kind of a blessing 
+	// in disguise for the metamodule because they look bad on that resolution
+
+	if (bHasCommon) {
+		SvgWidget* overlay = createWidget<SvgWidget>(Vec(0, 0));
+		overlay->setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/" + moduleName + "_common.svg")));
+		addChild(overlay);
+	}
 }
 
 void SanguineModuleWidget::appendContextMenu(Menu* menu) {

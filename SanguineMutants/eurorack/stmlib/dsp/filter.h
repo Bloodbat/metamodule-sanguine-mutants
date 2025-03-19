@@ -385,8 +385,8 @@ class Svf {
     float hp, bp, lp;
     float state_1 = state_1_;
     float state_2 = state_2_;
-    float hp_gain = mode < 0.5f ? -mode * 2.0f : -2.0f + mode * 2.0f;
-    float lp_gain = mode < 0.5f ? 1.0f - mode * 2.0f : 0.0f;
+    float hp_gain = fmin(-mode * 2.0f + 1.0f, 0.0f);
+    float lp_gain = fmax(1.0f - mode * 2.0f, 0.0f);
     float bp_gain = mode < 0.5f ? 0.0f : mode * 2.0f - 1.0f;
     while (size--) {
       hp = (*in - r_ * state_1 - g_ * state_1 - state_2) * h_;
@@ -410,9 +410,9 @@ class Svf {
     float hp, bp, lp;
     float state_1 = state_1_;
     float state_2 = state_2_;
-    float hp_gain = std::min(-mode * 2.0f + 1.0f, 0.0f);
-    float bp_gain = 1.0f - 2.0f * fabsf(mode - 0.5f);
-    float lp_gain = std::max(1.0f - mode * 2.0f, 0.0f);
+    float hp_gain = fmin(-mode * 2.0f + 1.0f, 0.0f);
+    float bp_gain = fmax(1.0f - 2.0f * fabsf(mode - 0.5f), 0.0f);
+    float lp_gain = fmax(1.0f - mode * 2.0f, 0.0f);
     while (size--) {
       hp = (*in - r_ * state_1 - g_ * state_1 - state_2) * h_;
       bp = g_ * hp + state_1;
