@@ -248,6 +248,9 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/aleae.cpp
     ${SOURCE_DIR}/src/apices.cpp
     ${SOURCE_DIR}/src/funes.cpp
+    ${SOURCE_DIR}/src/ansa.cpp
+    ${SOURCE_DIR}/src/nix.cpp
+    ${SOURCE_DIR}/src/scalaria.cpp
 
 )
 
@@ -257,6 +260,7 @@ target_include_directories(SanguineMutants PRIVATE
     ${SOURCE_DIR}/parasites_stmlib
     ${SOURCE_DIR}/dsp
     ${SOURCE_DIR}/src
+    ${SOURCE_DIR}/pcgcpp
     ${EURORACK_DIR}
     ${ALT_FIRMWARE_DIR}
 )
