@@ -226,7 +226,10 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/braids/quantizer.cc
     ${EURORACK_DIR}/braids/digital_oscillator.cc
 
-    
+    ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_modulator.cc
+    ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_oscillator.cc
+    ${ALT_FIRMWARE_DIR}/scalaria/scalaria_resources.cc
+
     # Parasites and base firmware
     ${SOURCE_DIR}/src/incurvationes.cpp
     ${SOURCE_DIR}/src/distortiones.cpp
@@ -251,6 +254,7 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/ansa.cpp
     ${SOURCE_DIR}/src/nix.cpp
     ${SOURCE_DIR}/src/scalaria.cpp
+    ${SOURCE_DIR}/src/mutantsblank.cpp
 
 )
 
