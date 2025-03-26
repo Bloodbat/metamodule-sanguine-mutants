@@ -1,7 +1,100 @@
 {
-    "MetaModulePluginMaintainer": "My Name",
-    "MetaModulePluginMaintainerEmail": "",
-    "MetaModulePluginMaintainerUrl": "",
-    "MetaModuleDescription": "",
-    "MetaModuleIncludedModules": []
+    "MetaModulePluginMaintainer": "oksami",
+    "MetaModulePluginMaintainerEmail": "itsoksami@gmail.com",
+    "MetaModulePluginMaintainerUrl": "https://github.com/Ericxgao/metamodule-sanguine-mutants",
+    "MetaModuleDescription": "Sanguine modules ported for MetaModule",
+    "MetaModuleIncludedModules": [
+        {
+            "slug": "Funes",
+            "name": "Funes"
+        },
+        {
+            "slug": "Sanguine-Mutants-Blank",
+            "name": "Sanguine Mutants Blank"
+        },
+        {
+            "slug": "Sanguine-Apices",
+            "name": "Apices"
+        },
+        {
+            "slug": "Sanguine-Aleae",
+            "name": "Aleae"
+        },
+        {
+            "slug": "Sanguine-Nodi",
+            "name": "Nodi"
+        },
+        {
+            "slug": "Sanguine-Contextus",
+            "name": "Contextus"
+        },
+        {
+            "slug": "Sanguine-Nebulae",
+            "name": "Nebulae"
+        },
+        {
+            "slug": "Sanguine-Etesia",
+            "name": "Etesia"
+        },
+        {
+            "slug": "Sanguine-Mortuus",
+            "name": "Mortuus"
+        },
+        {
+            "slug": "Sanguine-Fluctus",
+            "name": "Fluctus"
+        },
+        {
+            "slug": "Sanguine-Incurvationes",
+            "name": "Incurvationes"
+        },
+        {
+            "slug": "Sanguine-Distortiones",
+            "name": "Distortiones"
+        },
+        {
+            "slug": "Sanguine-Mutuus",
+            "name": "Mutuus"
+        },
+        {
+            "slug": "Sanguine-Explorator",
+            "name": "Explorator"
+        },
+        {
+            "slug": "Sanguine-Marmora",
+            "name": "Marmora"
+        },
+        {
+            "slug": "Sanguine-Anuli",
+            "name": "Anuli"
+        },
+        {
+            "slug": "Sanguine-Velamina",
+            "name": "Velamina"
+        },
+        {
+            "slug": "Sanguine-Aestus",
+            "name": "Aestus"
+        },
+        {
+            "slug": "Sanguine-Temulenti",
+            "name": "Temulenti"
+        },
+        {
+            "slug": "Sanguine-Vimina",
+            "name": "Vimina"
+        },
+        {
+            "slug": "Sanguine-Nix",
+            "name": "Nix"
+        },
+        {
+            "slug": "Sanguine-Ansa",
+            "name": "Ansa"
+        },
+        {
+            "slug": "Sanguine-Scalaria",
+            "name": "Scalaria"
+        }
+    ]
 }
