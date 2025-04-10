@@ -2,7 +2,7 @@
     "MetaModulePluginMaintainer": "oksami",
     "MetaModulePluginMaintainerEmail": "itsoksami@gmail.com",
     "MetaModulePluginMaintainerUrl": "https://github.com/Ericxgao/metamodule-sanguine-mutants",
-    "MetaModuleDescription": "Sanguine modules ported for MetaModule",
+    "MetaModuleDescription": "Sanguine Mutants ported for MetaModule",
     "MetaModuleIncludedModules": [
         {
             "slug": "Funes",
