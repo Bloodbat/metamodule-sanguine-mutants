@@ -48,9 +48,9 @@ target_link_options(SanguineMutants PRIVATE
 # Add source files
 target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/plugin.cpp
-    ${SOURCE_DIR}/src/sanguinecomponents.cpp
-    ${SOURCE_DIR}/src/themes.cpp
-    ${SOURCE_DIR}/src/sanguinehelpers.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/themes.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/sanguinehelpers.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/sanguinecomponents.cpp
     ${EURORACK_DIR}/warps/dsp/modulator.cc
     ${EURORACK_DIR}/warps/dsp/filter_bank.cc
     ${EURORACK_DIR}/warps/dsp/oscillator.cc
@@ -121,6 +121,7 @@ target_sources(SanguineMutants PRIVATE
     # Add tides source files
     ${EURORACK_DIR}/tides/resources.cc
     ${EURORACK_DIR}/tides/generator.cc
+    ${EURORACK_DIR}/tides/plotter.cc 
 
     # Add tides2 source files
     ${EURORACK_DIR}/tides2/resources.cc
@@ -261,6 +262,7 @@ target_sources(SanguineMutants PRIVATE
 # Add include directories
 target_include_directories(SanguineMutants PRIVATE 
     ${SOURCE_DIR}
+    ${SOURCE_DIR}/SanguineModulesCommon/src
     ${SOURCE_DIR}/parasites_stmlib
     ${SOURCE_DIR}/dsp
     ${SOURCE_DIR}/src
