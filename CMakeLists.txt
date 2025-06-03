@@ -251,9 +251,7 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/nebulae.cpp
     ${SOURCE_DIR}/src/aleae.cpp
     ${SOURCE_DIR}/src/apices.cpp
-    ${SOURCE_DIR}/src/Funes.cpp
-    ${SOURCE_DIR}/src/ansa.cpp
-    ${SOURCE_DIR}/src/nix.cpp
+    ${SOURCE_DIR}/src/Funes.cpp    
     ${SOURCE_DIR}/src/scalaria.cpp
     ${SOURCE_DIR}/src/mutantsblank.cpp
 
