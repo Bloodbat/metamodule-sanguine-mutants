@@ -21,8 +21,8 @@ set(EURORACK_DIR ${SOURCE_DIR}/eurorack)
 
 add_library(SanguineMutants STATIC)
 
-target_compile_definitions(SanguineMutants PRIVATE 
-    __V1x 
+target_compile_definitions(SanguineMutants PRIVATE
+    __V1x
     __PLUGIN
     NOASM
 )
@@ -59,9 +59,9 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/stmlib/dsp/units.cc
     ${EURORACK_DIR}/stmlib/utils/random.cc
     ${EURORACK_DIR}/stmlib/dsp/atan.cc
-    ${ALT_FIRMWARE_DIR}/parasites_stmlib/dsp/parasites_atan.cc  
-    
-    # Add Clouds Parasite source files
+    ${ALT_FIRMWARE_DIR}/parasites_stmlib/dsp/parasites_atan.cc
+
+    # Add Etesia firmware source files
     ${ALT_FIRMWARE_DIR}/clouds_parasite/dsp/etesia_mu_law.cc
     ${ALT_FIRMWARE_DIR}/clouds_parasite/dsp/etesia_correlator.cc
     ${ALT_FIRMWARE_DIR}/clouds_parasite/dsp/etesia_granular_processor.cc
@@ -70,26 +70,25 @@ target_sources(SanguineMutants PRIVATE
     ${ALT_FIRMWARE_DIR}/clouds_parasite/etesia_resources.cc
     ${ALT_FIRMWARE_DIR}/clouds_parasite/dsp/pvoc/etesia_frame_transformation.cc
     ${ALT_FIRMWARE_DIR}/clouds_parasite/dsp/pvoc/etesia_stft.cc
-    
-    # Add other existing source files...
-    ${ALT_FIRMWARE_DIR}/distortiones/dsp/distortiones_modulator.cc
-    ${ALT_FIRMWARE_DIR}/mutuus/dsp/mutuus_modulator.cc
-    # Add mutuus source files
+
+    # Add Mutuus firmware source files
+	${ALT_FIRMWARE_DIR}/mutuus/dsp/mutuus_modulator.cc
     ${ALT_FIRMWARE_DIR}/mutuus/dsp/mutuus_filter_bank.cc
     ${ALT_FIRMWARE_DIR}/mutuus/dsp/mutuus_oscillator.cc
     ${ALT_FIRMWARE_DIR}/mutuus/dsp/mutuus_vocoder.cc
     ${ALT_FIRMWARE_DIR}/mutuus/mutuus_resources.cc
-    # Add distortiones source files  
+    # Add Distortiones firmware source files
+	${ALT_FIRMWARE_DIR}/distortiones/dsp/distortiones_modulator.cc
     ${ALT_FIRMWARE_DIR}/distortiones/dsp/distortiones_filter_bank.cc
     ${ALT_FIRMWARE_DIR}/distortiones/dsp/distortiones_oscillator.cc
     ${ALT_FIRMWARE_DIR}/distortiones/dsp/distortiones_vocoder.cc
     ${ALT_FIRMWARE_DIR}/distortiones/distortiones_resources.cc
-    
+
     # Add parasites_stmlib source files
     ${ALT_FIRMWARE_DIR}/parasites_stmlib/dsp/parasites_units.cc
     ${ALT_FIRMWARE_DIR}/parasites_stmlib/utils/parasites_random.cc
 
-    # Add deadman source files
+    # Add Mortuus firmware source files
     ${ALT_FIRMWARE_DIR}/deadman/deadman_resources.cc
     ${ALT_FIRMWARE_DIR}/deadman/deadman_processors.cc
     ${ALT_FIRMWARE_DIR}/deadman/pulse_processor/deadman_pulse_shaper.cc
@@ -104,7 +103,7 @@ target_sources(SanguineMutants PRIVATE
     ${ALT_FIRMWARE_DIR}/deadman/drums/deadman_snare_drum.cc
     ${ALT_FIRMWARE_DIR}/deadman/drums/deadman_bass_drum.cc
 
-    # Add fluctus source files
+    # Add Fluctus firmware source files
     ${ALT_FIRMWARE_DIR}/fluctus/fluctus_resources.cc
     ${ALT_FIRMWARE_DIR}/fluctus/dsp/fluctus_granular_processor.cc
     ${ALT_FIRMWARE_DIR}/fluctus/dsp/fluctus_kammerl_player.cc
@@ -114,21 +113,21 @@ target_sources(SanguineMutants PRIVATE
     ${ALT_FIRMWARE_DIR}/fluctus/dsp/pvoc/fluctus_phase_vocoder.cc
     ${ALT_FIRMWARE_DIR}/fluctus/dsp/pvoc/fluctus_spectral_clouds_transformation.cc
 
-    # Add bumps source files
+    # Add Temulenti firmware source files
     ${ALT_FIRMWARE_DIR}/bumps/bumps_resources.cc
     ${ALT_FIRMWARE_DIR}/bumps/bumps_generator.cc
 
-    # Add tides source files
+    # Add Aestus firmware source files
     ${EURORACK_DIR}/tides/resources.cc
     ${EURORACK_DIR}/tides/generator.cc
-    ${EURORACK_DIR}/tides/plotter.cc 
+    ${EURORACK_DIR}/tides/plotter.cc
 
-    # Add tides2 source files
+    # Add tides2 firmware source files
     ${EURORACK_DIR}/tides2/resources.cc
     ${EURORACK_DIR}/tides2/poly_slope_generator.cc
     ${EURORACK_DIR}/tides2/ramp/ramp_extractor.cc
 
-    # Add rings source files
+    # Add Anuli firmware source files
     ${EURORACK_DIR}/rings/resources.cc
     ${EURORACK_DIR}/rings/dsp/resonator.cc
     ${EURORACK_DIR}/rings/dsp/string.cc
@@ -136,7 +135,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/rings/dsp/part.cc
     ${EURORACK_DIR}/rings/dsp/fm_voice.cc
 
-    # Add marbles source files
+    # Add Marmora firmware source files
     ${EURORACK_DIR}/marbles/resources.cc
     ${EURORACK_DIR}/marbles/random/t_generator.cc
     ${EURORACK_DIR}/marbles/random/x_y_generator.cc
@@ -145,7 +144,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/marbles/random/quantizer.cc
     ${EURORACK_DIR}/marbles/ramp/ramp_extractor.cc
 
-    # Add clouds source files
+    # Add Nebulae firmware source files
     ${EURORACK_DIR}/clouds/resources.cc
     ${EURORACK_DIR}/clouds/dsp/mu_law.cc
     ${EURORACK_DIR}/clouds/dsp/correlator.cc
@@ -154,7 +153,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/clouds/dsp/pvoc/phase_vocoder.cc
     ${EURORACK_DIR}/clouds/dsp/pvoc/stft.cc
 
-    # Add peaks source files
+    # Add Apices firmware source files
     ${EURORACK_DIR}/peaks/resources.cc
     ${EURORACK_DIR}/peaks/processors.cc
     ${EURORACK_DIR}/peaks/number_station/number_station.cc
@@ -167,7 +166,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/peaks/modulations/lfo.cc
     ${EURORACK_DIR}/peaks/modulations/multistage_envelope.cc
 
-    # Add plaits source files
+    # Add Funes firmware source files
     ${EURORACK_DIR}/plaits/resources.cc
     ${EURORACK_DIR}/plaits/dsp/voice.cc
     ${EURORACK_DIR}/plaits/dsp/chords/chord_bank.cc
@@ -198,7 +197,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/plaits/dsp/engine/fm_engine.cc
     ${EURORACK_DIR}/plaits/dsp/engine/grain_engine.cc
 
-    # Add plaits engine2 source files
+    # Add Funes 1.2 firmware source files
     ${EURORACK_DIR}/plaits/dsp/engine2/wave_terrain_engine.cc
     ${EURORACK_DIR}/plaits/dsp/engine2/chiptune_engine.cc
     ${EURORACK_DIR}/plaits/dsp/engine2/phase_distortion_engine.cc
@@ -208,6 +207,7 @@ target_sources(SanguineMutants PRIVATE
     ${EURORACK_DIR}/plaits/dsp/fm/algorithms.cc
     ${EURORACK_DIR}/plaits/dsp/fm/dx_units.cc
 
+	# Add Contextus firmware source files
     ${ALT_FIRMWARE_DIR}/renaissance/renaissance_resources.cc
     ${ALT_FIRMWARE_DIR}/renaissance/renaissance_quantizer.cc
     ${ALT_FIRMWARE_DIR}/renaissance/renaissance_macro_oscillator.cc
@@ -220,18 +220,20 @@ target_sources(SanguineMutants PRIVATE
     ${ALT_FIRMWARE_DIR}/renaissance/vocalist/sam.cc
     ${ALT_FIRMWARE_DIR}/renaissance/vocalist/wordlist.cc
     ${ALT_FIRMWARE_DIR}/renaissance/vocalist/rendertabs.cc
-    
+
+	# Add Nodi firmware source files
     ${EURORACK_DIR}/braids/macro_oscillator.cc
     ${EURORACK_DIR}/braids/resources.cc
     ${EURORACK_DIR}/braids/analog_oscillator.cc
     ${EURORACK_DIR}/braids/quantizer.cc
     ${EURORACK_DIR}/braids/digital_oscillator.cc
 
+    # Add Scalaria firmware source files
     ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_modulator.cc
     ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_oscillator.cc
     ${ALT_FIRMWARE_DIR}/scalaria/scalaria_resources.cc
 
-    # Parasites and base firmware
+    # Modules source files
     ${SOURCE_DIR}/src/incurvationes.cpp
     ${SOURCE_DIR}/src/distortiones.cpp
     ${SOURCE_DIR}/src/mutuus.cpp
@@ -252,15 +254,12 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/aleae.cpp
     ${SOURCE_DIR}/src/apices.cpp
     ${SOURCE_DIR}/src/Funes.cpp
-    ${SOURCE_DIR}/src/ansa.cpp
-    ${SOURCE_DIR}/src/nix.cpp
     ${SOURCE_DIR}/src/scalaria.cpp
     ${SOURCE_DIR}/src/mutantsblank.cpp
-
 )
 
 # Add include directories
-target_include_directories(SanguineMutants PRIVATE 
+target_include_directories(SanguineMutants PRIVATE
     ${SOURCE_DIR}
     ${SOURCE_DIR}/SanguineModulesCommon/src
     ${SOURCE_DIR}/parasites_stmlib
