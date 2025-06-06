@@ -266,7 +266,7 @@ target_include_directories(SanguineMutants PRIVATE
     ${SOURCE_DIR}/parasites_stmlib
     ${SOURCE_DIR}/dsp
     ${SOURCE_DIR}/src
-    ${SOURCE_DIR}/pcgcpp
+    ${SOURCE_DIR}/SanguineModulesCommon/pcgcpp
     ${EURORACK_DIR}
     ${ALT_FIRMWARE_DIR}
 )
