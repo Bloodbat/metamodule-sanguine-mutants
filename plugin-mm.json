@@ -87,6 +87,10 @@
         {
             "slug": "Sanguine-Scalaria",
             "name": "Scalaria"
+        },
+		{
+            "slug": "Sanguine-Reticula",
+            "name": "Reticula"
         }
     ]
 }
