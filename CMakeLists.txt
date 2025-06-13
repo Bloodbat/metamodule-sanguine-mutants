@@ -232,6 +232,9 @@ target_sources(SanguineMutants PRIVATE
     ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_modulator.cc
     ${ALT_FIRMWARE_DIR}/scalaria/dsp/scalaria_oscillator.cc
     ${ALT_FIRMWARE_DIR}/scalaria/scalaria_resources.cc
+	
+	# Add Reticula firmware source files
+	${EURORACK_DIR}/grids/reticula_pattern_generator.cpp
 
     # Modules source files
     ${SOURCE_DIR}/src/incurvationes.cpp
@@ -256,6 +259,7 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/Funes.cpp
     ${SOURCE_DIR}/src/scalaria.cpp
     ${SOURCE_DIR}/src/mutantsblank.cpp
+	${SOURCE_DIR}/src/reticula.cpp
 )
 
 # Add include directories
