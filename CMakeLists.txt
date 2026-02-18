@@ -260,6 +260,7 @@ target_sources(SanguineMutants PRIVATE
     ${SOURCE_DIR}/src/scalaria.cpp
     ${SOURCE_DIR}/src/mutantsblank.cpp
 	${SOURCE_DIR}/src/reticula.cpp
+	${SOURCE_DIR}/src/funesmk2.cpp
 )
 
 # Add include directories
