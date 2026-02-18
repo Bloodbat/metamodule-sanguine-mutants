@@ -91,6 +91,10 @@
 		{
             "slug": "Sanguine-Reticula",
             "name": "Reticula"
+        },
+		{
+            "slug": "FunesMk2",
+            "name": "Funes Mk2"
         }
     ]
 }
